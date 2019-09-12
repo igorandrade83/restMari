@@ -3,21 +3,10 @@ package blockly;
 import cronapi.*;
 import cronapi.rest.security.CronappSecurity;
 import java.util.concurrent.Callable;
-import org.springframework.data.domain.*;
-import org.springframework.validation.annotation.*;
-import org.springframework.web.bind.annotation.*;
 
 
-/** 
-* 
-* RestController @generated 
-* 
-*/ 
-
-@RestController
-@RequestMapping(value = "/api/rest/main/Bloco")
 @CronapiMetaData(type = "blockly")
-@CronappSecurity(post = "Public", get = "Public", execute = "Public", delete = "Public", put = "Public")
+@CronappSecurity
 public class Restcliente {
 
 public static final int TIMEOUT = 300;
@@ -26,14 +15,33 @@ public static final int TIMEOUT = 300;
  *
  * @return Var
  */
-
-@RequestMapping(method = RequestMethod.GET, value="/obter")
 // restcliente
 public static Var obter() throws Exception {
  return new Callable<Var>() {
 
+   private Var praMapa = Var.VAR_NULL;
+
    public Var call() throws Exception {
-    return cronapi.database.Operations.query(Var.valueOf("app.entity.Cliente"),Var.valueOf("select c from Cliente c"));
+    praMapa = cronapi.map.Operations.toMap(Var.valueOf("[{\"id\": \"A2D54D73-1913-41AC-836D-7768CEA91F44\", \"responsavel\": \"João\", \"altura\": \"33\"}, {\"id\": \"1C0767FC-F643-4636-91E1-FF8F0ACF7C29\", \"responsavel\": \"Matheus\", \"altura\": \"52\"}, {\"id\": \"116FC14E-023C-4EB2-8513-05DB1552E2C0\", \"responsavel\": \"Paula\", \"altura\": \"44\"}]"));
+    return praMapa;
+   }
+ }.call();
+}
+
+/**
+ *
+ * @return Var
+ */
+// Descreva esta função...
+public static Var atualizafont() throws Exception {
+ return new Callable<Var>() {
+
+   private Var retornoGet = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    retornoGet = cronapi.map.Operations.toMap(Var.valueOf("[{\"id\": \"A2D54D73-1913-41AC-836D-7768CEA91F44\", \"responsavel\": \"João\", \"altura\": \"33\"}, {\"id\": \"1C0767FC-F643-4636-91E1-FF8F0ACF7C29\", \"responsavel\": \"Matheus\", \"altura\": \"52\"}, {\"id\": \"116FC14E-023C-4EB2-8513-05DB1552E2C0\", \"responsavel\": \"Paula\", \"altura\": \"44\"}]"));
+    System.out.println(retornoGet.getObjectAsString());
+    return retornoGet;
    }
  }.call();
 }
@@ -43,10 +51,8 @@ public static Var obter() throws Exception {
  * @param id3
  * @return Var
  */
-
-@RequestMapping(method = RequestMethod.GET, value="/deletar/{id3}")
 // Descreva esta função...
-public static Var deletar(@PathVariable("id3") Var id3 ) throws Exception {
+public static Var deletar(Var id3) throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {
@@ -63,10 +69,8 @@ public static Var deletar(@PathVariable("id3") Var id3 ) throws Exception {
  * @param Nome2
  * @return Var
  */
-
-@RequestMapping(method = RequestMethod.GET, value="/inserir/{Nome2}")
 // Descreva esta função...
-public static Var inserir(@PathVariable("Nome2") Var Nome2 ) throws Exception {
+public static Var inserir(Var Nome2) throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {
@@ -83,10 +87,8 @@ public static Var inserir(@PathVariable("Nome2") Var Nome2 ) throws Exception {
  * @param obj
  * @return Var
  */
-
-@RequestMapping(method = RequestMethod.GET, value="/update/{obj}")
 // Descreva esta função...
-public static Var update(@PathVariable("obj") Var obj ) throws Exception {
+public static Var update(Var obj) throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {

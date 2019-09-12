@@ -153,5 +153,415 @@
     "calcFieldsProperties": {},
     "errorHandles": {},
     "serviceUrl": "api/cronapi/query/query211939/"
+  },
+  "query486671": {
+    "customId": "clientedefault",
+    "queryName": "clientedefault",
+    "sourceType": "blockly",
+    "baseEntity": "app.entity.Cliente",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "obter",
+      "blocklyClass": "blockly.Restcliente",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Restcliente",
+        "sourcePath": "src/main/java/blockly/restcliente.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "obter",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "inserir",
+            "hasReturn": "true",
+            "params": [
+              "Nome2"
+            ]
+          },
+          {
+            "name": "deletar",
+            "hasReturn": "true",
+            "params": [
+              "id3"
+            ]
+          },
+          {
+            "name": "update",
+            "hasReturn": "true",
+            "params": [
+              "obj"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "obter",
+      "blocklyPOSTMethod": "default",
+      "blocklyPUTMethod": "default",
+      "blocklyDELETEMethod": "default",
+      "blocklyFILTERMethod": "default",
+      "blocklyCOUNTMethod": "obter"
+    },
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": [
+        "PermitAll"
+      ],
+      "POST": true,
+      "POSTAuthorities": [
+        "PermitAll"
+      ],
+      "PUT": true,
+      "PUTAuthorities": [
+        "PermitAll"
+      ],
+      "DELETE": true,
+      "DELETEAuthorities": [
+        "PermitAll"
+      ],
+      "FILTER": true,
+      "FILTERAuthorities": [
+        "PermitAll"
+      ],
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "idade": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "nome": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": true,
+        "nullable": false,
+        "type": "String"
+      }
+    },
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query486671/"
+  },
+  "query175464": {
+    "customId": "sembase",
+    "queryName": "sembase",
+    "sourceType": "blockly",
+    "baseEntity": "app.entity.Cliente",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "obter",
+      "blocklyClass": "blockly.Restcliente",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Restcliente",
+        "sourcePath": "src/main/java/blockly/restcliente.blockly",
+        "language": "java",
+        "class": "blockly.Restcliente",
+        "methods": [
+          {
+            "name": "obter",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "inserir",
+            "hasReturn": "true",
+            "params": [
+              "Nome2"
+            ]
+          },
+          {
+            "name": "update",
+            "hasReturn": "true",
+            "params": [
+              "obj"
+            ]
+          },
+          {
+            "name": "atualizafont",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "deletar",
+            "hasReturn": "true",
+            "params": [
+              "id3"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "obter",
+      "blocklyPOSTMethod": "default",
+      "blocklyPUTMethod": "default",
+      "blocklyDELETEMethod": "default",
+      "blocklyFILTERMethod": "default",
+      "blocklyCOUNTMethod": "obter"
+    },
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": [
+        "PermitAll"
+      ],
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "idade": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "nome": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": true,
+        "nullable": false,
+        "type": "String"
+      }
+    },
+    "security": {
+      "nome": {}
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query175464/"
+  },
+  "query12466": {
+    "customId": "nobase",
+    "queryName": "nobase",
+    "sourceType": "blockly",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "atualizafont",
+      "blocklyClass": "blockly.Restcliente",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Restcliente",
+        "sourcePath": "src/main/java/blockly/restcliente.blockly",
+        "language": "java",
+        "class": "blockly.Restcliente",
+        "methods": [
+          {
+            "name": "obter",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "inserir",
+            "hasReturn": "true",
+            "params": [
+              "Nome2"
+            ]
+          },
+          {
+            "name": "update",
+            "hasReturn": "true",
+            "params": [
+              "obj"
+            ]
+          },
+          {
+            "name": "atualizafont",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "deletar",
+            "hasReturn": "true",
+            "params": [
+              "id3"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "atualizafont",
+      "blocklyPOSTMethod": "atualizafont",
+      "blocklyPUTMethod": "atualizafont",
+      "blocklyDELETEMethod": "atualizafont",
+      "blocklyFILTERMethod": "atualizafont",
+      "blocklyCOUNTMethod": "atualizafont"
+    },
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": [
+        "PermitAll"
+      ],
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "idade": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "nome": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      }
+    },
+    "security": {
+      "idade": {
+        "get": "Public"
+      },
+      "nome": {
+        "get": "Public"
+      },
+      "id": {
+        "get": "Public"
+      }
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query12466/"
+  },
+  "query417068": {
+    "customId": "bug",
+    "queryName": "bug",
+    "sourceType": "blockly",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "atualizafont",
+      "blocklyClass": "blockly.Restcliente",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Restcliente",
+        "sourcePath": "src/main/java/blockly/restcliente.blockly",
+        "language": "java",
+        "class": "blockly.Restcliente",
+        "methods": [
+          {
+            "name": "obter",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "inserir",
+            "hasReturn": "true",
+            "params": [
+              "Nome2"
+            ]
+          },
+          {
+            "name": "update",
+            "hasReturn": "true",
+            "params": [
+              "obj"
+            ]
+          },
+          {
+            "name": "atualizafont",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "deletar",
+            "hasReturn": "true",
+            "params": [
+              "id3"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "atualizafont",
+      "blocklyPOSTMethod": "atualizafont",
+      "blocklyPUTMethod": "atualizafont",
+      "blocklyDELETEMethod": "atualizafont",
+      "blocklyFILTERMethod": "atualizafont",
+      "blocklyCOUNTMethod": "atualizafont"
+    },
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": [
+        "PermitAll"
+      ],
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "altura": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "cor": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      }
+    },
+    "security": {
+      "altura": {
+        "get": "Public"
+      },
+      "cor": {
+        "get": "Public"
+      },
+      "id": {
+        "get": "Public"
+      }
+    },
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query417068/"
   }
 }

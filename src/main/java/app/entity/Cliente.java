@@ -45,7 +45,7 @@ public class Cliente implements Serializable {
   */
   @Column(name = "idade", nullable = true, unique = false, insertable=true, updatable=true)
   
-  private java.lang.Integer idade;
+  private java.lang.String idade;
 
   /**
    * Construtor
@@ -101,7 +101,7 @@ public class Cliente implements Serializable {
    * @generated
    */
   
-  public java.lang.Integer getIdade(){
+  public java.lang.String getIdade(){
     return this.idade;
   }
 
@@ -110,7 +110,7 @@ public class Cliente implements Serializable {
    * @param idade idade
    * @generated
    */
-  public Cliente setIdade(java.lang.Integer idade){
+  public Cliente setIdade(java.lang.String idade){
     this.idade = idade;
     return this;
   }
