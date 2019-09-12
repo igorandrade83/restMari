@@ -1,0 +1,157 @@
+{
+  "auth": {
+    "customId": "auth",
+    "queryName": "Autenticar",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "User",
+    "entityFullName": "app.entity.User",
+    "query": "select o from User o where o.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "POST": false,
+      "PUT": false,
+      "DELETE": false
+    },
+    "events": {},
+    "defaultValues": {},
+    "security": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/auth/"
+  },
+  "roles": {
+    "customId": "roles",
+    "queryName": "Obter Autorização",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "Role",
+    "entityFullName": "app.entity.Role",
+    "query": "select o.id from Role o where o.user.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "POST": false,
+      "PUT": false,
+      "DELETE": false,
+      "FILTER": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/roles/"
+  },
+  "query211939": {
+    "customId": "clientes",
+    "queryName": "cliente",
+    "sourceType": "blockly",
+    "baseEntity": "app.entity.Cliente",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "obter",
+      "blocklyClass": "blockly.Restcliente",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Restcliente",
+        "sourcePath": "src/main/java/blockly/restcliente.blockly",
+        "language": "java",
+        "class": "blockly.Restcliente",
+        "methods": [
+          {
+            "name": "obter",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "inserir",
+            "hasReturn": "true",
+            "params": [
+              "Nome2"
+            ]
+          },
+          {
+            "name": "deletar",
+            "hasReturn": "true",
+            "params": [
+              "id3"
+            ]
+          },
+          {
+            "name": "update",
+            "hasReturn": "true",
+            "params": [
+              "obj"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "obter",
+      "blocklyPOSTMethod": "inserir",
+      "blocklyPUTMethod": "update",
+      "blocklyDELETEMethod": "deletar",
+      "blocklyFILTERMethod": "default",
+      "blocklyCOUNTMethod": "obter"
+    },
+    "query": "",
+    "queryParamsValues": [],
+    "verbs": {
+      "GET": true,
+      "GETAuthorities": [
+        "PermitAll"
+      ],
+      "POST": true,
+      "POSTAuthorities": [
+        "PermitAll"
+      ],
+      "PUT": true,
+      "PUTAuthorities": [
+        "PermitAll"
+      ],
+      "DELETE": true,
+      "DELETEAuthorities": [
+        "PermitAll"
+      ],
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "idade": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "nome": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": true,
+        "nullable": false,
+        "type": "String"
+      }
+    },
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query211939/"
+  }
+}
